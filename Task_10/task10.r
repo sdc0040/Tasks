@@ -71,4 +71,7 @@ dev.off()
 #there is a positive correlation between element 1 and element 2 of the traits 0.375
 #No it is not significant as it randomly simulates the elements and it is positively correlated each time
 #meaning overall there is no significance in a positive correlation value
-
+#Bonus
+TreeB <- pbtree(n=100)
+X <- fastBM(TreeB, nsim=2)
+phylomorphospace(TreeB, X, xlab="element1", ylab="element2")
